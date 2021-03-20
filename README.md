@@ -26,3 +26,8 @@ I have separated the styles in three files which can be used together or indepen
 'VikunjaStylized.css' - overlaying this will make opinionated changes like removing shadows and borders or changing alignments (good for clean-style-freaks like me);
 
 ENJOY! And a big THANK YOU to Vikunja Authors for this wonderful piece of software.
+
+### 3. OPTIONS
+(Dark-compact-styled is my favorite so it will probably get more love!)
+
+![Vikunja-Styles-Options](https://user-images.githubusercontent.com/3017910/111883701-ef7d0a80-89b4-11eb-8f14-8199d3719144.png)
