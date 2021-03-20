@@ -8,7 +8,7 @@ Vikunja (https://vikunja.io/) is an open-source, self-hosted, cross-platform, to
 
 The Vikunja Authors are having a lot of effort making this application feature-rich so styling issues are obviously less important at this time.
 
-I find Vikunja incredibly useful already but my eyes demand a dark mode and my huge lists demand a more compact layout – that's why I made stylesheet to accomplished it.
+I find Vikunja incredibly useful already but my eyes demand a dark mode and my huge lists demand a more compact layout – that's why I made these stylesheets to accomplish it.
 
 CAUTION: this is an UNOFICIAL mod, not related with Vikunja Authors: this means it may break sometimes, altought I'll try to make it always compatible with the more recent versions of Vikunja.
 
