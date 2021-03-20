@@ -1,0 +1,422 @@
+/*
+
+VIKUNJA OVERRIDE STYLES
+VikunjaDark.css - version 1.0 - 2021-03-20
+https://github.com/bmscmoreira/VikunjaStyles
+released under GPLv3
+
+1. INTRO
+Vikunja (https://vikunja.io/) is an open-source, self-hosted, cross-platform, to-do list application licenced under GPLv3, developed by The Vikuja Authors (so they say!)
+The Vikunja Authors are having a lot of effort making this application feature-rich so styling issues are obviously less important at this time.
+I find Vikunja incredibly useful already but my eyes demand a dark mode and my huge lists demand a more compact layout – that's why I made stylesheet to accomplished it.
+CAUTION: this is an UNOFICIAL mod, not related with Vikunja Authors: this means it may break sometimes, altought I'll try to make it always compatible with the more recent versions of Vikunja.
+NOTE: this is a WIP: may have bugs, please report them.
+
+2. USAGE
+Simply overlay this CSS file over the rendered app. This can be done with a lot of browser extensions (look for 'css inject', 'css override', etc).
+I have separated the styles in three files which can be used together or independently to achive different Vikunja looks (eg. you prefer a light theme but want more items on the screen? Just overaly the 'compact' rules). The three files are:
+
+'VikunjaDark.css' - overlaying this will bring dark colors to Vikunja (good for the eyes);
+'VikunjaCompact.css' - overlaying this will make the interface more compact (good for people with LOTS of tasks);
+'VikunjaStylized.css' - overlaying this will make opinionated changes like removing shadows and borders or changing alignments (good for clean-style-freaks like me);
+
+ENJOY! And a big THANK YOU to Vikunja Authors for this wonderful piece of software.
+
+*/
+
+
+/* VARIABLES */
+:root {
+    --white: #FFF;
+    --heavy-gray: #222;
+    --medium-gray: #444;
+}
+
+/* GLOBALS */
+a {
+    color:var(--white);
+}
+a:hover {
+    color:var(--white);
+}
+.table thead td, .table thead th {
+    color:var(--white);
+}
+.table {
+    color:var(--white);
+}
+.card {
+color:var(--white);
+}
+.table {
+background-color: var(--heavy-gray);
+}
+.label {
+color:var(--white);
+}
+html {
+    background-color:var(--heavy-gray);
+}
+body {
+    background-color:var(--heavy-gray);
+    color:var(--white);
+}
+.button.is-primary[disabled], fieldset[disabled] .button.is-primary {
+background:var(--medium-gray);
+color:var(--white);
+}
+/* scroll bars */
+* {
+    scrollbar-color: var(--medium-gray) var(--heavy-gray);
+    scrollbar-width: thin;
+}
+/* headings */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color:var(--white);
+}
+/**********/
+/* NAVBAR */
+/**********/
+nav.navbar.main-theme.is-fixed-top {
+    background-color:var(--heavy-gray);
+}
+/* username */
+.navbar .user span {
+    color:var(--white);
+}
+/* vikinja logo */
+.logo img {
+    filter: invert();
+}
+/* sidebar toggle */
+svg:not(:root).svg-inline--fa {
+    color:var(--white);
+}
+
+/***********/
+/* SIDEBAR */
+/***********/
+.namespace-container.is-active {
+    background-color:var(--heavy-gray);
+}
+/* sidebar main menu */
+.app-container .namespace-container .menu .menu-list li>a {
+color:#AAA;
+}
+/* sidebar active main menu item */
+.app-container .namespace-container .menu .menu-list li>a.router-link-exact-active {
+    border-left: .4rem solid var(--white);
+    color: var(--white);
+}
+/* sidebar active main menu item hover */
+.app-container .namespace-container .menu .menu-list li>a:hover, .app-container .namespace-container .menu .menu-list span.list-menu-link:hover {
+    border-left: .4rem solid var(--white);
+}
+/* sidebar hovered main menu item */
+.app-container .namespace-container .menu .menu-list li:hover {
+    background-color:#333;
+}
+/* sidebar hovered item */
+.app-container .namespace-container .menu .menu-list span.list-menu-link:hover {
+    border-left: .4rem solid var(--white);
+}
+/* sidebar task lists */
+.app-container .namespace-container .menu .menu-list span.list-menu-link {
+    color: #AAA;
+}
+/* sidebar active task list */
+.app-container .namespace-container .menu .menu-list span.list-menu-link.router-link-exact-active {
+    border-left: .4rem solid var(--white);
+    color:var(--white);
+}
+/* menu labels */
+.app-container .namespace-container .menu .menu-label {
+    color:var(--white);
+}
+/****************/
+/* CONTENT AREA */
+/****************/
+.app-container .app-content {
+    background-color:var(--heavy-gray);
+}
+/* card */
+.app-container .app-content .card {
+    background-color:var(--heavy-gray);
+}
+/* tasks list */
+.tasks {
+    background-color:var(--heavy-gray);
+}
+/* task text at listing */
+.tasks .task a {
+    color:var(--white);
+}
+/* hovered task item */
+.tasks .task:hover {
+    background-color:#333;
+}
+/* hovered task text */
+.tasks .task a:hover {
+    color:var(--white);
+}
+/************/
+/* UPCOMING */
+/************/
+/* 'show tasks without dates' check sign */
+.fancycheckbox input[type=checkbox]:checked+.check svg {
+    stroke:var(--white);
+}
+/* 'show tasks without dates' hovered square sign */
+.fancycheckbox .check:hover svg {
+    stroke:var(--white);
+}
+
+/******************/
+/* POPUP CALENDAR */
+/******************/
+.flatpickr-day.endRange, .flatpickr-day.endRange.inRange, .flatpickr-day.endRange.nextMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.endRange:focus, .flatpickr-day.endRange:hover, .flatpickr-day.selected, .flatpickr-day.selected.inRange, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.selected:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange, .flatpickr-day.startRange.inRange, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.startRange:focus, .flatpickr-day.startRange:hover {
+    background:var(--heavy-gray);
+    border-color:var(--heavy-gray);
+}
+
+/*************/
+/* TASK VIEW */
+/*************/
+/* background */
+.modal-container .task-view {
+background-color:var(--heavy-gray) !important;
+}
+/* title and breadcrumb */
+.task-view .heading .title.task-id {
+color:var(--white);
+}
+.task-view .heading .input {
+    color:var(--white);
+}
+.task-view .subtitle {
+color:var(--white);
+}
+.task-view .subtitle a {
+color:var(--white);
+}
+/* detail title */
+.task-view .details .detail-title {
+color:var(--white);
+}
+.control .control input.input {
+    color:var(--white);
+}
+.has-text-grey {
+    color:var(--white) !important;
+}
+/* date picker */
+.task-view .datepicker a.show {
+color: var(--white);
+}
+/* select boxes */
+.task-view-container .task-view .select select {
+color:var(--white);
+}
+/* hovered and active selectors */
+.task-view .details .select:not(.has-defaults) select:not(:disabled):hover, .task-view .details .select:not(.has-defaults) select:not(:disabled):active {
+background: var(--medium-gray);
+border-color: var(--medium-gray);
+}
+.task-view .datepicker a.show:hover {
+background: var(--medium-gray);
+}
+/* 'each' text */
+.task-view p.pr-4 {
+    color:var(--white);
+}
+/* 'repeat from current date' text */
+.task-view label.check span {
+    color:var(--white);
+}
+/**********************/
+/* NAMESPACES & LISTS */
+/**********************/
+/* top right buttons */
+.button.is-primary {
+background-color:var(--white);
+color:#000;
+}
+/* top right buttons hovered */
+.button.is-primary:hover {
+background-color:var(--white);
+color: #000;
+}
+/* 'archived' list indicator */
+.namespaces-list .namespace .is-archived {
+    background:var(--white);
+    border: 1px solid var(--white);
+}
+/* create a new namespace background */
+.card .modal-card-foot {
+    background: var(--heavy-gray);
+}
+/* create a new namespace heading */
+.card-header-title {
+color:var(--white);
+}
+/* create saved filter modal background */
+div.modal-content .card-header-title {
+    background-color:var(--heavy-gray);
+}
+div.modal-content div.card-content {
+    background-color:var(--heavy-gray);
+}
+
+/*************/
+/* TEAMS VIEW */
+/*************/
+
+
+
+
+/*************/
+/* LIST VIEW */
+/*************/
+/* add new task box */
+input {
+    background-color: var(--heavy-gray);
+    color:var(--white);
+}
+/* add new task box icon */
+.field.task-add svg.svg-inline--fa.fa-tasks.fa-w-16 {
+    color:#000;
+}
+/* add new task button */
+.task-add .button.is-primary[disabled] {
+    background-color: var(--white);
+    color:#000;
+}
+.task-add .button.is-primary {
+    background-color: var(--white);
+    color:#000;
+}
+/* add new task button plus sign */
+.task-add svg.svg-inline--fa.fa-plus.fa-w-14 {
+    color:#000;
+}
+/* search icon */
+.search a.button.is-outlined svg.svg-inline--fa.fa-search.fa-w-16 {
+    color:#000;
+}
+/* filter icon */
+.filter-container svg.svg-inline--fa.fa-filter.fa-w-16 {
+        color:#000;
+}
+/* list title */
+.list-title > h1.title {
+    color:var(--white);
+}
+/* filter panel */
+.filter-container .card.filters .card-content.loader-container {
+background-color: var(--heavy-gray);
+color:var(--white);   
+}
+/* filter panel labels */
+.filter-container .card.filters .card-content.loader-container .label {
+    color:var(--white);
+}
+/* filter panel select dropdown arrow */
+.filter-container .select:not(.is-multiple):not(.is-loading)::after {
+border-color:#000;
+}
+/* view selector 'list/gantt/table/kanban' */
+.switch-view {
+    background:var(--heavy-gray);
+    border:1px solid var(--white);
+}
+.switch-view a.is-active {
+    background:var(--white);
+}
+.switch-view > a {
+    color:var(--white);
+}
+.switch-view a.is-active, .switch-view a:hover {
+    color:#000;
+}
+.switch-view > a.is-active {
+    color:#000;
+}
+.switch-view a:hover {
+    background-color:#333;
+}
+
+/**************/
+/* TABLE VIEW */
+/**************/
+/* table row hover */
+.table.is-hoverable.is-striped tbody tr:not(.is-selected):hover, .table.is-hoverable tbody tr:not(.is-selected):hover {
+    background-color: var(--medium-gray);
+}
+/**************/
+/* GANTT VIEW */
+/**************/
+/* range picker select arrow */
+.range-picker .select:not(.is-multiple):not(.is-loading)::after {
+  border-color:#000;  
+}
+/* gantt chart background */
+.tasks .row:nth-child(odd) {
+    background: var(--heavy-gray) repeating-linear-gradient(90deg, var(--medium-gray), var(--medium-gray) 1px, #333 1px, #333 35px) repeat scroll 0% 0% !important;
+}
+.tasks .row:nth-child(even) {
+    background: var(--heavy-gray) repeating-linear-gradient(90deg, var(--medium-gray), var(--medium-gray) 1px, var(--heavy-gray) 1px, var(--heavy-gray) 35px) repeat scroll 0% 0% !important;
+}
+/* gantt chart today mark */
+.gantt-chart .dates .months .month .days .day.today {
+background:#000;
+}
+/* gantt chart task */
+.gantt-chart .task {
+    background-color: #000 !important;
+    border-color:#000 !important;
+}
+/***************/
+/* KANBAN VIEW */
+/***************/
+/* panels */
+.kanban .bucket .tasks .task {
+    background:var(--medium-gray);
+}
+/* task id inside panel */
+.kanban .bucket .tasks .task .task-id {
+    color:var(--white);
+}
+/* due date inside panel */
+.kanban .bucket .tasks .task .due-date {
+    background:var(--heavy-gray); 
+}
+/* details button inside panel */
+.kanban .bucket .tasks .task .footer .icon svg:not(:root).svg-inline--fa {
+    color:#000; 
+}
+/* headings */
+.kanban .bucket {
+    background:var(--heavy-gray);
+}
+.input.title {
+    background:var(--white);
+}
+/* bottom add another task button */
+.kanban .bucket-footer .button {
+background: var(--medium-gray);
+color:var(--white);
+}
+.kanban .bucket-footer .button:hover {
+background: #333;
+color:var(--white);
+}
+/* create a new bucket button */
+.kanban .bucket.new-bucket .button {
+    background: var(--white);
+}
+/* bucket edit menu trashcan icon */
+div.kanban-view  svg.svg-inline--fa.fa-trash-alt.fa-w-14 {
+    color: #777;
+}
+
+
