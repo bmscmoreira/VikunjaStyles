@@ -10,12 +10,12 @@ The Vikunja Authors are having a lot of effort making this application feature-r
 
 I find Vikunja incredibly useful already but my eyes demand a dark mode and my huge lists demand a more compact layout – that's why I made these stylesheets to accomplish it.
 
-CAUTION: this is an UNOFICIAL mod, not related with Vikunja Authors: this means it may break sometimes, altought I'll try to make it always compatible with the more recent versions of Vikunja.
+CAUTION: this is an UNOFICIAL mod, not related with Vikunja Authors: this means it may break sometimes, altought I'll try to make it always compatible with the most recent versions of Vikunja.
 
 NOTE: this is a WIP: may have bugs, please report them.
 
 ### 2. USAGE
-Simply overlay this CSS file over the rendered app. This can be done with a lot of browser extensions (look for 'css inject', 'css override', etc).
+Simply overlay the desired CSS files over the rendered app. This can be done with a lot of browser extensions (look for 'css inject', 'css override', etc).
 
 I have separated the styles in three files which can be used together or independently to achive different Vikunja looks (eg. you prefer a light theme but want more items on the screen? Just overaly the 'compact' rules). The three files are:
 
@@ -23,7 +23,7 @@ I have separated the styles in three files which can be used together or indepen
 
 'VikunjaCompact.css' - overlaying this will make the interface more compact (good for people with LOTS of tasks);
 
-'VikunjaStylized.css' - overlaying this will make opinionated changes like removing shadows and borders or changing alignments (good for clean-style-freaks like me);
+'VikunjaStylized.css' - overlaying this will make opinionated changes like removing shadows and borders or changing alignments (good for clean-style-freaks like me).
 
 ENJOY! And a big THANK YOU to Vikunja Authors for this wonderful piece of software.
 
