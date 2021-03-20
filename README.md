@@ -1,10 +1,6 @@
 ##  VIKUNJA OVERRIDE STYLES
 VikunjaDark.css - version 1.0 - 2021-03-20
 
-https://github.com/bmscmoreira/VikunjaStyles
-
-released under GPLv3
-
 ##  # 1. INTRO
 Vikunja (https://vikunja.io/) is an open-source, self-hosted, cross-platform, to-do list application licenced under GPLv3, developed by The Vikuja Authors (so they say!)
 
