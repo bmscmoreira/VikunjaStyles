@@ -23,3 +23,128 @@ I have separated the styles in three files which can be used together or indepen
 ENJOY! And a big THANK YOU to Vikunja Authors for this wonderful piece of software.
 
 */
+
+/* VARIABLES */
+:root {
+    --white: #FFF;
+    --heavy-gray: #222;
+    --medium-gray: #333;
+    --red: #ff4136;
+    --orange: #ff851b;
+}
+
+/* GLOBAL */
+
+/* fullscreen width */
+.is-max-width-desktop {
+    max-width:100%;
+}
+/* mega special effects killer */
+* {
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* priority labels */
+.high-priority {
+    color: #FFF !important;
+    font-weight: 800;
+    background: var(--red) !important;
+    font-size: 0.8em;
+    padding-right: 10px;
+      }
+
+.high-priority.not-so-high {
+    color: #FFF !important;
+    font-weight: 800;
+    background: var(--orange) !important;
+    font-size: 0.8em;
+    padding-right: 10px;
+}
+
+/* labels height */
+.kanban .bucket .tasks .task .footer .priority-label {
+height: 1.5rem;
+}
+
+/* OVERVIEW */
+/* welcome message alignment */
+.is-menu-enabled.home .content.has-text-centered h2 {
+    text-align: left;
+    font-weight: 800 !important;
+    margin-top: 15px;
+  }
+
+/* UPCOMING */
+ /* today/next week/next month buttons alignment */
+.show-tasks div.mb-4 {
+    text-align: left;
+}
+
+/* tasks list */
+.tasks .task {
+    padding-left:0;
+    margin:0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* max width tasks */
+.is-max-width-desktop .tasks .task {
+    max-width:100%;
+}
+
+/* SIDEBAR */
+/* main section */
+.app-container .namespace-container .menu .menu-list li > a {
+    font-weight: 700;
+}
+/* sidebar background */
+.namespace-container.is-active {
+    background-color:#111;
+}
+/* sidebar menu labels */
+.app-container .namespace-container .menu .namespace-title .menu-label {
+    font-weight:800;
+}
+
+/* NAVBAR */
+/* navbar background */
+nav.navbar.main-theme.is-fixed-top {
+background-color:#111;
+}
+
+/* switch view selector alignment */
+.switch-view {
+    padding-left:0;
+}
+
+/* LIST VIEW */
+/* task add */
+.task-add {
+    padding:0;
+}
+
+/* TABLE VIEW */
+/* table borders */
+.table td, .table th {
+    border: 1px solid var(--medium-gray) !important;
+}
+
+/* GANTT VIEW */
+.gantt-options {
+background: var(--medium-gray);
+}
+.gantt-options .range-picker .field select {
+    height:32px;
+}
+
+/* FOOTER */
+/* powered by vikunja */
+.menu-bottom-link {
+    position: absolute;
+    bottom:0;
+    color: #FFF !important;
+    font-weight: 800;
+}

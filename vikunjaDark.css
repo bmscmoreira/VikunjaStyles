@@ -22,12 +22,13 @@ ENJOY! And a big THANK YOU to Vikunja Authors for this wonderful piece of softwa
 
 */
 
-
 /* VARIABLES */
 :root {
     --white: #FFF;
     --heavy-gray: #222;
-    --medium-gray: #444;
+    --medium-gray: #333;
+    --red: #ff4136;
+    --orange: #ff851b;
 }
 
 /* GLOBALS */
@@ -72,9 +73,9 @@ color:var(--white);
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
     color:var(--white);
 }
-/**********/
+
 /* NAVBAR */
-/**********/
+
 nav.navbar.main-theme.is-fixed-top {
     background-color:var(--heavy-gray);
 }
@@ -91,15 +92,14 @@ svg:not(:root).svg-inline--fa {
     color:var(--white);
 }
 
-/***********/
 /* SIDEBAR */
-/***********/
+
 .namespace-container.is-active {
     background-color:var(--heavy-gray);
 }
 /* sidebar main menu */
 .app-container .namespace-container .menu .menu-list li>a {
-color:#AAA;
+color: var(--white);
 }
 /* sidebar active main menu item */
 .app-container .namespace-container .menu .menu-list li>a.router-link-exact-active {
@@ -131,9 +131,9 @@ color:#AAA;
 .app-container .namespace-container .menu .menu-label {
     color:var(--white);
 }
-/****************/
+
 /* CONTENT AREA */
-/****************/
+
 .app-container .app-content {
     background-color:var(--heavy-gray);
 }
@@ -157,9 +157,9 @@ color:#AAA;
 .tasks .task a:hover {
     color:var(--white);
 }
-/************/
+
 /* UPCOMING */
-/************/
+
 /* 'show tasks without dates' check sign */
 .fancycheckbox input[type=checkbox]:checked+.check svg {
     stroke:var(--white);
@@ -169,21 +169,20 @@ color:#AAA;
     stroke:var(--white);
 }
 
-/******************/
 /* POPUP CALENDAR */
-/******************/
+
 .flatpickr-day.endRange, .flatpickr-day.endRange.inRange, .flatpickr-day.endRange.nextMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.endRange:focus, .flatpickr-day.endRange:hover, .flatpickr-day.selected, .flatpickr-day.selected.inRange, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.selected:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange, .flatpickr-day.startRange.inRange, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.startRange:focus, .flatpickr-day.startRange:hover {
     background:var(--heavy-gray);
     border-color:var(--heavy-gray);
 }
 
-/*************/
 /* TASK VIEW */
-/*************/
+
 /* background */
-.modal-container .task-view {
+.modal-container .task-view, .task-view {
 background-color:var(--heavy-gray) !important;
 }
+
 /* title and breadcrumb */
 .task-view .heading .title.task-id {
 color:var(--white);
@@ -231,9 +230,14 @@ background: var(--medium-gray);
 .task-view label.check span {
     color:var(--white);
 }
-/**********************/
+
 /* NAMESPACES & LISTS */
-/**********************/
+
+/* reducing list title size */
+.namespaces-list.loader-container.content h1 {
+    font-size: 1.5em;
+}
+
 /* top right buttons */
 .button.is-primary {
 background-color:var(--white);
@@ -265,16 +269,8 @@ div.modal-content div.card-content {
     background-color:var(--heavy-gray);
 }
 
-/*************/
-/* TEAMS VIEW */
-/*************/
-
-
-
-
-/*************/
 /* LIST VIEW */
-/*************/
+
 /* add new task box */
 input {
     background-color: var(--heavy-gray);
@@ -343,16 +339,15 @@ border-color:#000;
     background-color:#333;
 }
 
-/**************/
 /* TABLE VIEW */
-/**************/
+
 /* table row hover */
 .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover, .table.is-hoverable tbody tr:not(.is-selected):hover {
     background-color: var(--medium-gray);
 }
-/**************/
+
 /* GANTT VIEW */
-/**************/
+
 /* range picker select arrow */
 .range-picker .select:not(.is-multiple):not(.is-loading)::after {
   border-color:#000;  
@@ -373,9 +368,9 @@ background:#000;
     background-color: #000 !important;
     border-color:#000 !important;
 }
-/***************/
+
 /* KANBAN VIEW */
-/***************/
+
 /* panels */
 .kanban .bucket .tasks .task {
     background:var(--medium-gray);
@@ -416,5 +411,3 @@ color:var(--white);
 div.kanban-view  svg.svg-inline--fa.fa-trash-alt.fa-w-14 {
     color: #777;
 }
-
-

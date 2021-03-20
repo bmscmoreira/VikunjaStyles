@@ -23,3 +23,83 @@ I have separated the styles in three files which can be used together or indepen
 ENJOY! And a big THANK YOU to Vikunja Authors for this wonderful piece of software.
 
 */
+
+/* VARIABLES */
+:root {
+    --white: #FFF;
+    --heavy-gray: #222;
+    --medium-gray: #333;
+    --red: #ff4136;
+    --orange: #ff851b;
+}
+
+/* GLOBALS */
+
+/* reduce buttons size */
+.button {
+    height:25px;
+}
+ /* filter button */
+.filter-container .button {
+height:30px;
+}
+
+/* SIDEBAR */
+
+/* reduce menu item spacing */
+.app-container .namespace-container .menu .menu-list li {
+    height:30px;
+}
+/* reduce menu item vertical padding */
+.app-container .namespace-container .menu .menu-list li > a, .app-container .namespace-container .menu .menu-list span.list-menu-link {
+    padding: 0rem .5rem 0rem 3rem;
+}
+
+/* CONTENT AREA */
+
+/* reduce container top padding */
+.app-container .app-content {
+    padding: 4.5rem 1.5rem 1rem 1.5rem;
+}
+
+/* reduce title top margin */
+.content h3:not(:first-child) {
+    margin-top: 0;
+}
+
+/* reduce task spacing in tasks list */
+.tasks .task {
+    padding: .2rem;
+}
+
+/* UPCOMING */
+
+/* reduce date picker input height */
+.show-tasks input {
+    height:30px;
+}
+
+/* NAMESPACES & LISTS */
+
+/* reduce list cards dimension */
+
+.namespaces-list .namespace .lists .list {
+    height:80px;
+    width: calc((100% - 4rem)/8);
+}
+/* reduce list cards title size */
+.namespaces-list .namespace .lists .list .title {
+    font-size:1rem;
+}
+/* reduce is-archived label */
+.namespaces-list .namespace .is-archived {
+    padding:0;
+    margin-left:0;
+}
+
+/* TABLE VIEW */
+
+/* reduce table items padding */
+.table td, .table th {
+    padding: .2em;
+}
