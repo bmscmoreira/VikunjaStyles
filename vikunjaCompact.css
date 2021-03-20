@@ -85,11 +85,12 @@ height:30px;
 
 .namespaces-list .namespace .lists .list {
     height:80px;
-    width: calc((100% - 4rem)/8);
+    width: auto;
 }
 /* reduce list cards title size */
 .namespaces-list .namespace .lists .list .title {
-    font-size:1rem;
+    font-size:0.8rem;
+    font-weight: 800;
 }
 /* reduce is-archived label */
 .namespaces-list .namespace .is-archived {

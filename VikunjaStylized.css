@@ -100,20 +100,12 @@ height: 1.5rem;
 .app-container .namespace-container .menu .menu-list li > a {
     font-weight: 700;
 }
-/* sidebar background */
-.namespace-container.is-active {
-    background-color:#111;
-}
 /* sidebar menu labels */
 .app-container .namespace-container .menu .namespace-title .menu-label {
     font-weight:800;
 }
 
 /* NAVBAR */
-/* navbar background */
-nav.navbar.main-theme.is-fixed-top {
-background-color:#111;
-}
 
 /* switch view selector alignment */
 .switch-view {
